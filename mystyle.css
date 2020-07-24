@@ -1,43 +1,19 @@
-
+/*page color */
 body {
-  background-color: #FFFAF0;
+   background-color: #FFFAF0;
 }
 
+/*h1 color, font, text size*/
 h1 {
-  color: #000000;
+   color: #00000;
+   font-family: Gill Sans;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
+/*paragraph color, font, text size*/
+p {
+   color: #00000;
+   font-family: Gill Sans;
 }
 
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover:not(.active) {
-  background-color: #111;
-}
-
-.active {
-  background-color: #4CAF50;
-}
-
-<ul>
-  <li><a class="active" href="index.html">Home</a></li>
-  <li><a href="about.html">About</a></li>
-  <li><a href="#">Recipes</a></li>
-</ul>
+/*navigation bar*/
 
