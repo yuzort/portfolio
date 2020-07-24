@@ -34,9 +34,6 @@ li a:hover:not(.active) {
 .active {
   background-color: #4CAF50;
 }
-</style>
-</head>
-<body>
 
 <ul>
   <li><a class="active" href="index.html">Home</a></li>
