@@ -9,6 +9,12 @@ h1 {
    font-family: Gill Sans;
 }
 
+/*h4 color, font, text size*/
+h4 {
+   color: #00000;
+   font-family: Gill Sans;
+}
+
 /*paragraph color, font, text size*/
 p {
    color: #00000;
