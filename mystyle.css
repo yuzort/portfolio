@@ -27,6 +27,14 @@ p {
    font-family: Gill Sans;
 }
 
+/*centering an image*/
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 /*navigation bar*/
 ul {
   list-style-type: none;
