@@ -131,6 +131,7 @@ body {
   text-align: center;
   background-color: #f1f1f1;
   height: 330px;
+  width: 25%;
 }
 
 /* Responsive columns - one column layout (vertical) on small screens */
@@ -147,5 +148,6 @@ body {
 .flex-container {
   display:grid;
   flex-wrap: wrap; 
+  justify-content: flex-start;
   grid-template-columns:repeat(auto-fill,minmax(160px,lft));
 }
