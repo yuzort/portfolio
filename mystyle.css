@@ -142,3 +142,9 @@ body {
     margin-top: 20px;
   }
 }
+
+/*flexbox*/
+.box {
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(160px,lft));
+}
