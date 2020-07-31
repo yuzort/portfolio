@@ -148,6 +148,7 @@ body {
 .flex-container {
   display:grid;
   flex-wrap: wrap; 
+  flex-direction: row;
   justify-content: flex-start;
   grid-template-columns:repeat(auto-fill,minmax(160px,lft));
 }
