@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Yuzuka Akasaka</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,800" rel="stylesheet">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+  
+body {
+ margin: 25px 25px 25px 25px
+ font-family: 'Montserrat', sans-serif;
+ font-size: 16px
+ line-height: 2.0;
+}
+  
+ h1 {
+    text-align: center;
+}
+  
+img {
+  float: right;
+}  
+  
+/* Style the top navigation */
+.ul.topnav {
+ list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: cadetblue;
+}
+
+ ul.topnav li {float: left;}
+ 
+ ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+  
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+  
+ul.topnav li a.active {background-color: #4CAF50;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+
+/* Style the content */
+.content {
+  margin-left: 200px;
+  padding-left: 20px;
+}
+  
+html {
+  background: #ffffff;
+  font-family: system-ui;
+  -webkit-font-smoothing: antialiased;
+  padding: 20px 0;
+}
+
+header {
+  width: 90%;
+  max-width: 1240px;
+  margin: 0 auto;
+}  
+.band {
+  width: 90%;
+  max-width: 1240px;
+  margin: 0 auto;
+  
+  display: grid;
+  
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 20px;
+  
+  @media (min-width: 30em) {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  @media (min-width: 60em) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.card {
+  background: white;
+  text-decoration: none;
+  color: #444;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  
+  // sets up hover state
+  position: relative;
+  top: 0;
+  transition: all .1s ease-in;
+    
+  &:hover {
+    top: -2px;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.75);
+  }
+  
+  article {
+    padding: 20px;
+    flex: 1;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  h1 {
+    font-size: 20px;
+    margin: 0;
+    color: #333;
+  }
+  
+  p {
+    flex: 1;
+    line-height: 1.4;
+  }
+  
+  span {
+    font-size: 12px;
+    font-weight: bold;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    margin: 2em 0 0 0;
+  }
+  
+  .thumb {
+    padding-bottom: 60%;
+    background-size: cover;
+    background-position: center center;
+  }
+}
+
+.item-1 {
+  @media (min-width: 60em) {
+    grid-column: 1 / span 2;
+    
+    h1 {
+      font-size: 24px;
+    }
+  }
+}
+  
+</style>
+</head>
+<body>
+
+<ul class="topnav">
+  <li><a class="#Hello!">Home</a></li>
+  <li><a href="#Work Samples">Work Samples</a></li>
+  <li><a href="#Contact">Contact</a></li>
+  </li></ul>
+
+<div class="content">
+  <h1>Yuzuka Akasaka</h1>
+  <h2><a id="Hello!">Hello!</a></h2>
+  <p><img src="IMG_0160.jpg" alt="headshot of Yuzuka" style="width:260px;height:170px;margin-left:20px;">
+    Hi, I'm Yuzuka! With my marketing and communications background, I've worked with C-suite leaders, high school students, journalists, local political campaigns, and more to support their storytelling. I'm always thinking, "How can I make information easier to understand?" 
+<br><br>
+I've worked on issues in energy efficiency/sustainability, cybersecurity, higher education access, public finance, and regional economic development. I also have experience in project management, operations, web design, and writing coaching. Some of my wins include: 
+<br>• filling in (with a day's notice) to translate Japanese in cybersecurity engineering meetings, 
+<br>• contributing technical writing that supported my company’s entry into the U.S. Department of Energy’s National Renewable Energy Lab’s (NREL) clean energy management incubator, 
+<br>• implementing a marketing platform that improved a process's efficiency by over 75%, 
+<br>• and creating a document explaining credit freezes to help friends take action to become more secure against credit card fraud
+<br><br>
+Outside of work, I’m aspiring to be better at rollerskating and embroidering. 
+  </p>
+  
+  <h2><a id="Work Samples">Work Samples</a></h2>
+<div class="band">
+  <div class="item-1">
+    <a href="https://stratisiot.com/whats-the-importance-of-sustainability-for-multifamily-residents/" class="card">
+      <div class="thumb" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/flex-1.jpg);"></div>
+      <article>
+        <h3>What's the Importance of Sustainability for Multifamily Residents?</h3>
+        <p>Lorem ipsum short description.</p>
+        <span>Blog</span>
+      </article>
+    </a>
+  </div>
+  <div class="item-2">
+    <a href="https://webdesign.tutsplus.com/articles/how-to-conduct-remote-usability-testing--cms-27045" class="card">
+      <div class="thumb" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/users-2.png);"></div>
+      <article>
+        <h3>How to Conduct Remote Usability Testing</h3>
+        <span>Harry Brignull</span>
+      </article>
+    </a>
+  </div>
+  <div class="item-3">
+    <a href="https://design.tutsplus.com/articles/envato-tuts-community-challenge-created-by-you-july-edition--cms-26724" class="card">
+      <div class="thumb" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/flex-5.jpg);"></div>
+      <article>
+        <h3>Created by You, July Edition</h3>
+        <p>Welcome to our monthly feature of fantastic tutorial results created by you, the Envato Tuts+ community! </p>
+        <span>Melody Nieves</span>
+      </article>
+    </a>
+  </div>
+  <div class="item-4">
+    <a href="https://webdesign.tutsplus.com/tutorials/how-to-code-a-scrolling-alien-lander-website--cms-26826" class="card">
+      <div class="thumb" style="background-image: url(freezecreditscreenshot.png);"></div>
+      <article>
+        <h3>Freeze Your Credit</h3>
+        <p>Lorem ipsum short description.</p>
+        <span>One Page Document</span>
+      </article>
+    </a>
+  </div>
+    
+</div>
+  
+  <h2><a id="Contact">Contact</a></h2>
+  <p>Say hello at yuzuka.akasaka(at)gmail.com or <a href=https://www.linkedin.com/in/yuzuka-akasaka/>on LinkedIn</a>.</p>
+
+</div>
+
+</body>
+</html>
