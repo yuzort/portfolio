@@ -60,41 +60,89 @@ img {
   padding-left: 20px;
 }
   
-/* Four columns side by side */
-.row {
-  float: left;
-  width: 75%;
-  margin-bottom: 16px;
-  padding: 0 8px;
-}
-
-/* Display the columns below each other instead of side by side on small screens */
-@media screen and (max-width: 650px) {
-  .row {
-    width: 100%;
-    display: block;
+band {
+  width: 90%;
+  max-width: 1240px;
+  margin: 0 auto;
+  
+  display: grid;
+  
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 20px;
+  
+  @media (min-width: 30em) {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  @media (min-width: 60em) {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
-/* Add some shadows to create a card effect */
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background: white;
+  text-decoration: none;
+  color: #444;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  
+  // sets up hover state
+  position: relative;
+  top: 0;
+  transition: all .1s ease-in;
+    
+  &:hover {
+    top: -2px;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+  }
+  
+  article {
+    padding: 20px;
+    flex: 1;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  h1 {
+    font-size: 20px;
+    margin: 0;
+    color: #333;
+  }
+  
+  p {
+    flex: 1;
+    line-height: 1.4;
+  }
+  
+  span {
+    font-size: 12px;
+    font-weight: bold;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    margin: 2em 0 0 0;
+  }
+  
+  .thumb {
+    padding-bottom: 60%;
+    background-size: cover;
+    background-position: center center;
+  }
 }
 
-/* Some left and right padding inside the container */
-.container {
-  padding: 0 16px;
-}
-
-/* Clear floats */
-.container::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.title {
-  color: grey;
+.item-1 {
+  @media (min-width: 60em) {
+    grid-column: 1 / span 2;
+    
+    h1 {
+      font-size: 24px;
+    }
+  }
 }
   
 </style>
@@ -123,60 +171,73 @@ Outside of work, I’m aspiring to be better at rollerskating and embroidering.
   </p>
   
   <h2><a id="Work Samples">Work Samples</a></h2>
+<div class="band">
+  <div class="item-1">
+    <a href="https://design.tutsplus.com/articles/international-artist-feature-malaysia--cms-26852" class="card">
+      <div class="thumb" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/flex-1.jpg);"></div>
+      <article>
+        <h1>International Artist Feature: Malaysia</h1>
+        <span>Mary Winkler</span>
+      </article>
+    </a>
+  </div>
+  <div class="item-2">
+    <a href="https://webdesign.tutsplus.com/articles/how-to-conduct-remote-usability-testing--cms-27045" class="card">
+      <div class="thumb" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/users-2.png);"></div>
+      <article>
+        <h1>How to Conduct Remote Usability Testing</h1>
+        <span>Harry Brignull</span>
+      </article>
+    </a>
+  </div>
+  <div class="item-3">
+    <a href="https://design.tutsplus.com/articles/envato-tuts-community-challenge-created-by-you-july-edition--cms-26724" class="card">
+      <div class="thumb" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/flex-5.jpg);"></div>
+      <article>
+        <h1>Created by You, July Edition</h1>
+        <p>Welcome to our monthly feature of fantastic tutorial results created by you, the Envato Tuts+ community! </p>
+        <span>Melody Nieves</span>
+      </article>
+    </a>
+  </div>
+  <div class="item-4">
+    <a href="https://webdesign.tutsplus.com/tutorials/how-to-code-a-scrolling-alien-lander-website--cms-26826" class="card">
+      <div class="thumb" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/landing.png);"></div>
+      <article>
+        <h1>How to Code a Scrolling “Alien Lander” Website</h1>
+        <p>We’ll be putting things together so that as you scroll down from the top of the page you’ll see an “Alien Lander” making its way to touch down.</p>
+        <span>Kezz Bracey</span>
+      </article>
+    </a>
+  </div>
+  <div class="item-5">
+    <a href="https://design.tutsplus.com/tutorials/stranger-things-inspired-text-effect--cms-27139" class="card">
+      <div class="thumb" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/strange.jpg);"></div>
+      <article>
+        <h1>How to Create a “Stranger Things” Text Effect in Adobe Photoshop</h1>
+        <span>Rose</span>
+      </article>
+    </a>
+  </div>
+  <div class="item-6">
+    <a href="https://photography.tutsplus.com/articles/5-inspirational-business-portraits-and-how-to-make-your-own--cms-27338" class="card">
+      <div class="thumb" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/flor.jpg);"></div>
+      <article>
+        <h1>5 Inspirational Business Portraits and How to Make Your Own</h1>
 
-  <div class="row">
-  <div class="row">
-    <div class="card">
-      <img src="img1.jpg" alt="Jane" style="width:100%">
-      <div class="container">
-        <h3>What's the Importance of Sustainability for Multifamily Residents?</h3>
-        <p class="title">Blog Post</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>example@example.com</p>
-        <p><button class="button" a href="https://www.w3schools.com/" target="_blank">Read more</button></p>
-      </div>
-    </div>
+        <span>Marie Gardiner</span>
+      </article>
+    </a>
   </div>
-
-  <div class="row">
-    <div class="card">
-      <img src="img2.jpg" alt="Mike" style="width:100%">
-      <div class="container">
-        <h3>Mike Ross</h3>
-        <p class="title">Art Director</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>example@example.com</p>
-        <p><button class="button">Contact</button></p>
-      </div>
-    </div>
+  <div class="item-7">
+    <a href="https://webdesign.tutsplus.com/articles/notes-from-behind-the-firewall-the-state-of-web-design-in-china--cms-22281" class="card">
+      <div class="thumb" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/china.png);"></div>
+      <article>
+        <h1>Notes From Behind the Firewall: The State of Web Design in China</h1>
+        <span>Kendra Schaefer</span>
+      </article>
+    </a>
   </div>
-
-  <div class="row">
-    <div class="card">
-      <img src="img3.jpg" alt="John" style="width:100%">
-      <div class="container">
-        <h3>John Doe</h3>
-        <p class="title">Designer</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>example@example.com</p>
-        <p><button class="button">Contact</button></p>
-      </div>
-    </div>
-  </div>
-    
-    <div class="row">
-    <div class="card">
-      <img src="img2.jpg" alt="Mike" style="width:100%">
-      <div class="container">
-        <h3>Mike Ross 2</h3>
-        <p class="title">Art Director</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>example@example.com</p>
-        <p><button class="button">Contact</button></p>
-      </div>
-    </div>
-  </div>
-    
 </div>
   
   <h2><a id="Contact">Contact</a></h2>
