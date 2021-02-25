@@ -23,6 +23,8 @@ img {
   float: right;
 } 
 
+<!--Styling top navigation-->
+  
 ul.topnav {
   list-style-type: none;
   margin: 0;
@@ -46,11 +48,22 @@ ul.topnav li a:hover:not(.active) {background-color: black;}
 @media screen and (max-width: 600px) {
   ul.topnav li {float: none;}
 }
-  
 
-  
+<!--Styling work samples-->
+  .flex-container {
+  display: flex;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+
 </style>
 </head>
+  
 <body>
 
 <ul class="topnav">
@@ -59,8 +72,7 @@ ul.topnav li a:hover:not(.active) {background-color: black;}
   <li><a href="#Contact">Contact</a></li>
 </ul>
 
-
-<div class="content">
+  
  <header>
   <h1>Yuzuka Akasaka</h1>
 </header>
@@ -80,14 +92,15 @@ Outside of work, I’m aspiring to be better at rollerskating and embroidering. 
   </p>
   
  <h2><a id="Work Samples">Work Samples</a></h2> 
-
+<div class="flex-container">
+  <div>Lorem ipsum</div>
+  <div>2</div>
+  <div>3</div>  
+</div>
   
-</div> 
   
     <h2><a id="Contact">Contact</a></h2>
   <p>Say hello at yuzuka.akasaka(at)gmail.com or <a href=https://www.linkedin.com/in/yuzuka-akasaka/>on LinkedIn</a>.</p>
-
-</div>
 
 </body>
 </html>
