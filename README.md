@@ -15,3 +15,9 @@ This repository contains a professional multi-page web portfolio showcasing expe
 - **Podcast Production**: Details the creation of "Leaky Weekly," including scriptwriting and a 30% increase in YouTube Shorts views.
 - **Copywriting**: Showcases digital marketing insights on consumer connection and marketing innovation.
 - **Political Strategy**: Highlights web copy and constituent engagement for the Texas House of Representatives District 136.
+
+
+## To view before domain name purchase
+https://yuzort.github.io/portfolio/
+
+Once the domain name is purchased again rename CNAME back to yuzukaakasaka.com
