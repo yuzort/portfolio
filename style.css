@@ -2,7 +2,6 @@
     --bg-color: #ffffff;
     --text-color: #37352f;
     --gray-light: #f1f1f1;
-    /* Use a wider base, but let it grow up to 1200px */
     --max-container-width: 1200px;
 }
 
@@ -13,15 +12,16 @@ body {
     line-height: 1.6;
 }
 
-/* Updated container to be fluid */
-.container, .nav-container {
-    width: 90%; /* Uses 90% of screen width */
-    max-width: var(--max-container-width); /* Stops expanding at 1200px */
-    margin: 0 auto; /* Centers the site */
+/* The wrapper that centers the content */
+.container {
+    width: 90%; 
+    max-width: var(--max-container-width);
+    margin: 60px auto;
     padding: 0 20px;
-    box-sizing: border-box;
+    box-sizing: border-box; /* This is vital to keep padding from causing overflow */
 }
 
+/* Updated Nav for full responsiveness */
 nav {
     position: sticky;
     top: 0;
@@ -33,51 +33,43 @@ nav {
 }
 
 .nav-container {
+    width: 90%;
+    max-width: var(--max-container-width);
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.nav-links {
-    display: flex;
-    gap: 25px;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: var(--text-color);
-    font-weight: 500;
-}
-
-.container {
-    margin-top: 60px;
-    margin-bottom: 60px;
-}
-
+/* KEY FIX: Ensure the hero section takes the full width available */
 .hero-flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 60px;
+    gap: 40px;
     margin-bottom: 80px;
+    width: 100%; /* Force width */
 }
 
 .hero-text {
-    flex: 1; /* Text takes up available space */
+    flex: 1; /* Text will grow to fill available space */
+    min-width: 0; /* Prevents overflow */
 }
 
 .hero-image img {
-    width: 320px; /* Slightly larger for desktop */
-    height: 320px;
+    width: 100%; /* Image will scale */
+    max-width: 320px; /* But won't exceed this size */
+    height: auto;
     border-radius: 20px;
-    object-fit: cover;
     display: block;
 }
 
+/* KEY FIX: Ensure the grid takes full width */
 .job-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Auto-scales columns */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 25px;
+    width: 100%; /* Force grid to fill container */
 }
 
 .job-card {
@@ -88,30 +80,13 @@ nav {
     text-decoration: none;
     color: white;
     transition: transform 0.3s ease;
+    display: block;
 }
 
-.job-card:hover {
-    transform: translateY(-8px);
-}
-
-.card-image {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-}
-
-/* Mobile Adjustments */
+/* Media Queries for mobile */
 @media (max-width: 768px) {
     .hero-flex {
         flex-direction: column-reverse;
         text-align: center;
-        gap: 30px;
-    }
-    
-    .hero-image img {
-        width: 250px;
-        height: 250px;
     }
 }
