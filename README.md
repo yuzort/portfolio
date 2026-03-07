@@ -18,6 +18,5 @@ This repository contains a professional multi-page web portfolio showcasing expe
 
 
 ## To view before domain name purchase
-https://yuzort.github.io/portfolio/
-
-Once the domain name is purchased again rename CNAME back to yuzukaakasaka.com
+yuzort.github.io/portfolio/
+yuzukaakasaka.com
