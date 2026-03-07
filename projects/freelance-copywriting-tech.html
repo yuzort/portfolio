@@ -5,48 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Freelance Copywriting - Yuzuka Portfolio</title>
     <link rel="stylesheet" href="../style.css">
+    <style>
+        .back-link { display: inline-block; margin-bottom: 20px; text-decoration: none; color: var(--accent); font-weight: 500; }
+        .blog-card { flex: 1; min-width: 280px; text-decoration: none; color: inherit; border: 1px solid var(--gray-light); padding: 25px; border-radius: 12px; transition: 0.3s ease; background: white; }
+        .blog-card:hover { transform: translateY(-5px); border-color: var(--accent); box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+    </style>
 </head>
 <body>
 <nav>
     <div class="nav-container">
-        <a href="../index.html" style="font-weight: 700; text-decoration: none; color: black;">Yuzuka Akasaka</a>
-        <div class="nav-links"><a href="../index.html">Home</a></div>
+        <a href="../index.html" class="nav-logo">Yuzuka Akasaka</a>
+        <div class="nav-links"><a href="../index.html">Home</a> <a href="../index.html#projects-section">Projects</a></div>
     </div>
 </nav>
+
 <div class="container">
-    <a href="../index.html" class="back-link">← Back</a>
-    <header class="job-header">
+    <a href="../index.html" class="back-link">← Back to Projects</a>
+    
+    <header class="hero-text" style="margin-bottom: 60px;">
         <h1>Freelance Copywriting</h1>
-        <p class="job-meta">2022</p>
+        <p style="font-size: 1.2rem; color: #666;">Seer Interactive (2022)</p>
     </header>
 
-    <div class="content-section">
-        <h2>Challenge</h2>
+    <div class="hero-text">
+        <h2 class="section-title">Challenge</h2>
         <p>Seer Interactive, a digital marketing agency, had several effective videos and presentations that could reach more audiences if put together in a written format.</p>
     </div>
 
-    <div class="content-section">
-        <h2>Skills</h2>
-        <ul>
+    <div class="hero-text" style="margin-top: 40px;">
+        <h2 class="section-title">Skills</h2>
+        <ul style="padding-left: 20px;">
             <li>Copywriting</li>
-            <li>Research</li>
+            <li>Research & Content Strategy</li>
         </ul>
     </div>
 
-    <div class="content-section">
-    <h2>Solution</h2>
-    <p>I wrote two blogs that covered video content:</p>
-    <div style="display: flex; gap: 20px; flex-wrap: wrap; margin-top: 20px;">
-        <a href="https://www.seerinteractive.com/insights/why-consumer-connection-is-important-for-brands-in-2022" target="_blank" style="flex: 1; min-width: 280px; text-decoration: none; color: inherit; border: 1px solid #eee; padding: 20px; border-radius: 8px; transition: 0.3s; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
-            <h3 style="margin-top: 0; color: #007bff;">Why Consumer Connection is Important for Brands →</h3>
-            <p style="font-size: 0.9em; line-height: 1.5;">Explores how consumers seek authenticity, recapping key insights from mission-driven Seerfest 2022 sessions.</p>
-        </a>
-        <a href="https://www.seerinteractive.com/insights/scaling-marketing-innovation-to-empower-clients" target="_blank" style="flex: 1; min-width: 280px; text-decoration: none; color: inherit; border: 1px solid #eee; padding: 20px; border-radius: 8px; transition: 0.3s; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
-            <h3 style="margin-top: 0; color: #007bff;">Scaling Marketing Innovation to Empower Clients →</h3>
-            <p style="font-size: 0.9em; line-height: 1.5;">A deep dive into scaling data-driven decisions based on a talk by Seer's VP of Innovation, Wil Reynolds.</p>
-        </a>
+    <div class="tools-section" style="margin-top: 60px;">
+        <h2 class="section-title">Solution</h2>
+        <p>I synthesized complex video presentations into two long-form insights blogs for the Seer website:</p>
+        
+        <div style="display: flex; gap: 20px; flex-wrap: wrap; margin-top: 30px;">
+            <a href="https://www.seerinteractive.com/insights/why-consumer-connection-is-important-for-brands-in-2022" target="_blank" class="blog-card">
+                <h3 style="margin-top: 0; color: var(--accent);">Consumer Connection for Brands →</h3>
+                <p style="font-size: 0.95rem;">Explores how consumers seek authenticity, recapping key insights from mission-driven Seerfest sessions.</p>
+            </a>
+            <a href="https://www.seerinteractive.com/insights/scaling-marketing-innovation-to-empower-clients" target="_blank" class="blog-card">
+                <h3 style="margin-top: 0; color: var(--accent);">Scaling Marketing Innovation →</h3>
+                <p style="font-size: 0.95rem;">A deep dive into scaling data-driven decisions based on a talk by Seer's VP of Innovation, Wil Reynolds.</p>
+            </a>
+        </div>
     </div>
 </div>
-</div>
+
+<footer style="text-align: center; padding: 60px 0; color: #666;">
+    <p>© 2026 Yuzuka Akasaka</p>
+</footer>
 </body>
 </html>

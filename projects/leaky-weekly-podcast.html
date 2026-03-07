@@ -3,62 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leaky Weekly Podcast by Flare Research - Yuzuka Portfolio</title>
+    <title>Leaky Weekly Podcast - Yuzuka Portfolio</title>
     <link rel="stylesheet" href="../style.css">
     <style>
-        .video-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 20px; }
-        .uniform-video-container { position: relative; width: 100%; padding-bottom: 56.25%; height: 0; background: #000; border-radius: 8px; overflow: hidden; }
+        .back-link { display: inline-block; margin-bottom: 20px; text-decoration: none; color: var(--accent); font-weight: 500; }
+        .video-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 30px; }
+        .uniform-video-container { position: relative; width: 100%; padding-bottom: 56.25%; height: 0; background: #000; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
         .uniform-video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
+        .comment-screenshot { width: 100%; max-width: 600px; border-radius: 12px; margin-top: 25px; border: 1px solid var(--gray-light); }
     </style>
 </head>
 <body>
 <nav>
     <div class="nav-container">
-        <a href="../index.html" style="font-weight: 700; text-decoration: none; color: black;">Yuzuka Akasaka</a>
-        <div class="nav-links"><a href="../index.html">Home</a></div>
+        <a href="../index.html" class="nav-logo">Yuzuka Akasaka</a>
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="../index.html#projects-section">Projects</a>
+        </div>
     </div>
 </nav>
+
 <div class="container">
-    <a href="../index.html" class="back-link">← Back</a>
-    <header class="job-header">
-        <h1>Leaky Weekly Podcast by Flare Research</h1>
-        <p class="job-meta">2024-Present</p>
+    <a href="../index.html" class="back-link">← Back to Projects</a>
+    
+    <header class="hero-text" style="margin-bottom: 60px;">
+        <h1>Leaky Weekly Podcast</h1>
+        <p style="font-size: 1.2rem; color: #666;">Flare Research (2024–Present)</p>
     </header>
 
-    <div class="content-section">
-        <h2>Challenge</h2>
-        <p>We have had a few tries at creating a podcast/video project (including before my time), but didn’t have the bandwidth or processes to get it off the ground. In an effort to become a beloved cult brand, I sought out how to get an edge over our competitors in the video space.</p>
+    <div class="hero-text">
+        <h2 class="section-title">The Challenge</h2>
+        <p>We had attempted several podcast and video projects previously, but lacked the bandwidth and established processes to sustain them. To build a "cult brand" identity and gain a competitive edge in the cybersecurity video space, I sought to formalize our production and strategy.</p>
     </div>
 
-    <div class="content-section">
-        <h2>Skills</h2>
-        <ul>
-            <li>Cybercrime research script writing</li>
-            <li>Project management</li>
-            <li>Collaboration on design, video and audio editing</li>
+    <div class="hero-text" style="margin-top: 40px;">
+        <h2 class="section-title">Skills</h2>
+        <ul style="padding-left: 20px;">
+            <li>Cybercrime Research & Scriptwriting</li>
+            <li>End-to-End Project Management</li>
+            <li>Cross-functional Collaboration (Design/Audio/Video)</li>
         </ul>
     </div>
 
-    <div class="content-section">
-        <h2>Solution</h2>
-        <p>I found a podcast consultant and video-audio editing expert, and moved the podcast from idea to reality. Leaky Weekly is the only video podcast within our space of cybersecurity (Threat Exposure Management)! With an updated strategy, the YouTube shorts views have increased by 30%. When the host no longer had bandwidth for researching and script-writing, I recruited a researcher and reduced the host’s workload by 90%.</p>
+    <div class="tools-section" style="margin-top: 60px;">
+        <h2 class="section-title">The Solution</h2>
+        <p>I recruited a podcast consultant and editing expert to bridge the gap from idea to reality. Today, Leaky Weekly is the premier video podcast in the Threat Exposure Management space. Our updated strategy led to a 30% increase in YouTube Shorts views, and by optimizing the workflow, I reduced the host’s workload by 90%.</p>
         
         <div class="video-grid">
-            <div>
-                <div class="uniform-video-container">
-                    <iframe src="https://www.youtube.com/embed/zW604Ag-Tos" allowfullscreen></iframe>
-                </div>
+            <div class="uniform-video-container">
+                <iframe src="https://www.youtube.com/embed/zW604Ag-Tos" allowfullscreen title="Leaky Weekly Episode 1"></iframe>
             </div>
-            <div>
-                <div class="uniform-video-container">
-                    <iframe src="https://www.youtube.com/embed/b4o8WqBnDXE" allowfullscreen></iframe>
-                </div>
+            <div class="uniform-video-container">
+                <iframe src="https://www.youtube.com/embed/b4o8WqBnDXE" allowfullscreen title="Leaky Weekly Episode 2"></iframe>
             </div>
         </div>
 
-        <p style="margin-top: 20px;">We have received positive comments on YouTube including:</p>
-        <img src="../assets/leaky-weekly-screenshot-comment.png" alt="YouTube Community Feedback" style="width: 100%; border-radius: 8px; margin-top: 15px;">
-    </div>
-</div>
-</body>
-</html>
+        <p style="margin-top: 30px;"><strong>Community Feedback:</strong></p>
+        <img src="../assets/leaky-weekly-screenshot-comment.png" alt="YouTube Community Feedback" class="comment-screenshot">
