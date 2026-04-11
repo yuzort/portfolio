@@ -4,10 +4,10 @@ This repository contains a professional multi-page web portfolio showcasing expe
 
 ## Project Structure
 - `index.html`: The central hub and landing page of the portfolio.
-- `cybercrime-research-carousel.html`: Features a "zero click" content strategy using interactive LinkedIn embeds for technical reports.
-- `leaky-weekly-podcast.html`: Showcases a weekly cybersecurity news series with a uniform YouTube video grid and audience growth metrics.
-- `freelance-copywriting-tech.html`: Highlights SEO-optimized blog content and brand voice development for agencies like Seer Interactive.
-- `political-campaigns.html`: Documents copywriting, policy research, and design support for Representative John Bucy III’s re-election campaign.
+- `social-media-engagement`: Features a "zero click" content strategy using interactive LinkedIn embeds for technical reports.
+- `leaky-weekly-podcast`: Showcases a weekly cybersecurity news series with a uniform YouTube video grid and audience growth metrics.
+- `writing-editing-samples`: Highlights SEO-optimized blog content and brand voice development for agencies like Seer Interactive.
+- `multichannel-campaign`: Documents copywriting, policy research, and design support for Representative John Bucy III’s re-election campaign.
 - `style.css`: Global stylesheet ensuring a consistent, minimalist aesthetic across all pages.
 
 ## Content Overview
